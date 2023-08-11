@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Enablelocation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="292sp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cycle" />
+
+        <ImageView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="208sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:srcCompat="@drawable/charger" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="185sp"
+            android:layout_height="59sp"
+            android:layout_marginStart="88dp"
+            android:layout_marginEnd="87dp"
+            android:background="@drawable/roundbutton"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/xyz"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="185dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="91dp"
+            android:layout_marginEnd="91dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="@string/let_s_get_started1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="312sp"
+            android:layout_height="76sp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/poppins"
+            android:text="@string/we_collect_location_data_to_show_you_xyz_zones_amp_journey_routes_even_when_the_app_is_closed_or_not_in_use_allow_xyz_to_access_the_device_location"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="265sp"
+            android:layout_height="50sp"
+            android:layout_marginStart="47dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/roundbutton"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/enable_location"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+
+
+

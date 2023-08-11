@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigate"
+    app:startDestination="@id/loginsignuppage">
+    <fragment
+        android:id="@+id/enablelocation"
+        android:name="com.example.firsttrial.Enablelocation"
+        android:label="fragment_enablelocation"
+        tools:layout="@layout/fragment_enablelocation" >
+        <action
+            android:id="@+id/action_enablelocation_to_onboarding1"
+            app:destination="@id/onboarding1" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding1"
+        android:name="com.example.firsttrial.Onboarding1"
+        android:label="fragment_onboarding1"
+        tools:layout="@layout/fragment_onboarding1" >
+        <action
+            android:id="@+id/action_onboarding1_to_onboarding2"
+            app:destination="@id/onboarding2" />
+        <action
+            android:id="@+id/action_onboarding1_to_navtry"
+            app:destination="@id/navtry" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding2"
+        android:name="com.example.firsttrial.Onboarding2"
+        android:label="Onboarding2" >
+        <action
+            android:id="@+id/action_onboarding2_to_onboarding3"
+            app:destination="@id/onboarding3" />
+        <action
+            android:id="@+id/action_onboarding2_to_navtry"
+            app:destination="@id/navtry" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding3"
+        android:name="com.example.firsttrial.Onboarding3"
+        android:label="fragment_onboarding3"
+        tools:layout="@layout/fragment_onboarding3" >
+        <action
+            android:id="@+id/action_onboarding3_to_onboarding4"
+            app:destination="@id/onboarding4" />
+        <action
+            android:id="@+id/action_onboarding3_to_navtry"
+            app:destination="@id/navtry" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding4"
+        android:name="com.example.firsttrial.Onboarding4"
+        android:label="fragment_onboarding4"
+        tools:layout="@layout/fragment_onboarding4" >
+        <action
+            android:id="@+id/action_onboarding4_to_navtry"
+            app:destination="@id/navtry" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginsignuppage"
+        android:name="com.example.firsttrial.Loginsignuppage"
+        android:label="Loginsignuppage" >
+        <action
+            android:id="@+id/action_loginsignuppage_to_enablelocation"
+            app:destination="@id/enablelocation" />
+    </fragment>
+    <fragment
+        android:id="@+id/navtry"
+        android:name="com.example.firsttrial.navtry"
+        android:label="fragment_navtry"
+        tools:layout="@layout/fragment_navtry" />
+</navigation>
